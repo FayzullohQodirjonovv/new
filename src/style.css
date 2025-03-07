@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 0;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+.links li a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c6f71;
+}
+.navbar_top_contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar_top_contact p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #4e5760;
+}
+
+.navbar_top_contact a:first-of-type {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.navbar_top_contact button {
+  border-radius: 4px;
+  width: 134px;
+  height: 32px;
+  background: #f2f6fc;
+  border: none;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 0.90909;
+  text-transform: uppercase;
+  color: #2a5e8d;
+}
+
+.navbar_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.navbar_bottom_logo,
+.navbar_bottom_icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar_bottom_logo button {
+  border-radius: 8px;
+  width: 154px;
+  height: 52px;
+  border: none;
+  color: #fff;
+  background: #f17e00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.navbar_bottom form {
+  background: whitesmoke;
+  width: 40%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.navbar_bottom input {
+  width: 90%;
+  background: whitesmoke;
+  height: 36px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  font-size: 14px;
+}
+::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a0a3a5;
+}
+.navbar_bottom form button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 10%;
+}
+.foks {
+  gap: 20px;
+}
+.foks h3 {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0%;
+  font-size: 15px;
+}
+.mun p {
+  font-size: 210px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0%;
+}
+.navbar_bottom_icon {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0.57143;
+  color: #6b7076;
+  position: relative;
+}
+.navbar_bottom_icon p {
+  padding-top: 10px;
+}
+.counter {
+  width: 18px;
+  height: 18px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2;
+  color: #fff;
+  background-color: #e52b0e;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: 15px;
+}
+.counter2 {
+  right: 0;
+}
+#fff {
+  display: none;
+}
+.box p {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.lof__img {
+  width: 100px;
+  height: 30px;
+}
+.lif__h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  background: linear-gradient(to top, yellow 10%, transparent 10%);
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 600px;
+  margin-top: 20px;
+}
+.golf__ilok img{
+  width: 563px;
+height: 358px;
+}
+.cost{
+  width: 800px;
+}
+.buttons button{
+  padding: 10px 85px;
+  background: green;
+}
+.loktok p{
+  padding: 30px;
+}
+.loktok{
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 350px;
+}
+.end__box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.nono__box{
+  display: grid;
+  grid-template-columns: repeat(7 , 1fr);
+  place-items: center;
+  margin-top: 50px;
+}
+.joniuyh{
+   color: orange;
+}
+.cards{
+  border: 1px solid red;
+  border-radius: 13px;
+  padding: 0px 0px 20px;
+}
+.div__box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; 
+}
+
+@media (max-width: 1366px) {
+  .box {
+    display: none;
+  }
+  .p {
+    display: none;
+  }
+  .join {
+    display: none;
+  }
+  .le {
+    display: none;
+  }
+}
+@media (max-width: 1129px) {
+  .foks {
+    display: none;
+  }
+  .box p {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 800px) {
+  #checkbox:checked ~ .mobile {
+    right: 0;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .mobile {
+    background-color: darkslategrey;
+    color: white;
+  }
+  .jorn {
+    display: none;
+  }
+  #fff {
+    font-size: 30px;
+  }
+  #fff {
+    display: block;
+  }
+  .min {
+    display: none;
+  }
+  .inpt {
+    display: none;
+  }
+  .lop {
+    display: none;
+  }
+  .navbar_bottom_logo button {
+    display: none !important;
+  }
+  .navbar_bottom:first-child {
+    display: none;
+  }
+  .navbar_bottom_icons {
+    display: none;
+  }
+  .golf__boxes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .lefort{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  .lif{
+    display: none;
+  }
+  .lopro{
+    display: none;
+  }
+  .cost{
+    width: 100%;
+  }
+  .card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px
+  }
+  .golf__ilok{
+    width: 400px;
+  }
+  .golf__ilok img{
+    width: 120%;
+  }
+  .card{
+    width: 100%;
+  }
+  .popol__boxes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.loktok{
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 150px;
+}
+.lololo{
+  display: none;
+}
+.end__box{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  gap: 40px;
+}
+.nono__box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+.div__boxes{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+
+}
+.div__box{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+.lopertp{
+}
+}
+@media(max-width:451px){
+  .golf__ilok{
+    display: none;
+  }
+}
+    
